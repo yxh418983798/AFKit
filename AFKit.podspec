@@ -1,7 +1,7 @@
 :Pod::Spec.new do |s|
     s.name         = "AFKit"
     s.version      = "1.0.0"
-    s.ios.deployment_target = '7.0'
+    s.ios.deployment_target = '8.0'
     s.summary      = "AFKit，为开发者提供便捷安全的项目框架"
     s.homepage     = "https://github.com/yxh418983798/AFKit.git"
     s.license              = { :type => "MIT", :file => "LICENSE" }
