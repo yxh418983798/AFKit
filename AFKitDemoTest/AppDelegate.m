@@ -17,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window.rootViewController = [AFKitViewController new];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[AFKitViewController new]];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -276,6 +276,9 @@ static AFTimer *_timerManager;
 }
 
 - (void)setTag:(NSInteger)tag {
+    if ([AFTimer.timerCache.allValues containsObject:self]) {
+        [AFTimer.timerCache setValue:nil forKey:[NSString stringWithFormat:@"%li", (long)_tag]];
+    }
     _tag = tag;
     [AFTimer.timerCache setValue:self forKey:[NSString stringWithFormat:@"%li", (long)tag]];
     if (!_timerManager) {

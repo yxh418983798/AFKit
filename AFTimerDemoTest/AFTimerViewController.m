@@ -20,49 +20,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.view.backgroundColor = UIColor.whiteColor;
+    self.navigationItem.title = @"定时器";
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"开启" style:(UIBarButtonItemStylePlain) target:self action:@selector(controlTimer)];
+    UIButton *btn1 = [[UIButton alloc] initWithFrame:(CGRectMake(0, 100, 100, 50))];
+    [btn1 setTitle:@"开启定时器" forState:(UIControlStateNormal)];
+    [btn1 addTarget:self action:@selector(timerAction:) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:btn1];
     
-    self.timer = [AFTimer timerWithTimeInterval:1 target:self selector:@selector(timerAction:) userInfo:@"参数" repeats:YES forMode:NSRunLoopCommonModes];
     
-//    self.timer = [AFTimer displayLinkWithFrameInterval:60 target:self selector:@selector(timerAction:) userInfo:@"参数" forMode:NSRunLoopCommonModes];
+    UIButton *btn1 = [[UIButton alloc] initWithFrame:(CGRectMake(0, 100, 100, 50))];
+    [btn1 setTitle:@"关闭定时器" forState:(UIControlStateNormal)];
+    [btn1 addTarget:self action:@selector(timerAction:) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:btn1];
     
-//    self.timer = [AFTimer GCDTimerWithInterval:1 target:self selector:@selector(timerAction:) userInfo:@"参数" repeats:YES queue:nil];
-    self.timer.tag = 1;
+    //初始化定时器
+    AFTimer *timer = [AFTimer timerWithTimeInterval:1 target:self selector:@selector(timerAction:) userInfo:@"timer的参数" repeats:YES forMode:NSRunLoopCommonModes];
+    timer.tag = 1;
+}
+
+
+
+- (void)fireTimer {
     [AFTimer fireWithTag:1];
-    
-    AFTimer *timer = [AFTimer displayLinkWithFrameInterval:60 target:self selector:@selector(timerAction:) userInfo:@"参数" forMode:NSRunLoopCommonModes];
-    timer.tag = 2;
-    [timer fire];
 }
 
 
-- (void)controlTimer {
-    
-    if (self.timer.isValid) {
-//        [self.timer invalidate];
-//        [AFTimer invalidateWithTag:1];
-        [AFTimer releaseTimerWithTag:1];
-        [AFTimer invalidateWithTag:2];
-
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"开启" style:(UIBarButtonItemStylePlain) target:self action:@selector(controlTimer)];
-    } else {
-//        [self.timer fire];
-        [AFTimer fireWithTag:1];
-        [AFTimer fireWithTag:2];
-
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"关闭" style:(UIBarButtonItemStylePlain) target:self action:@selector(controlTimer)];
-    }
+- (void)invalidTimer {
+    [AFTimer invalidateWithTag:1];
 }
 
-- (void)timerAction:(id)userInfo {
-    NSLog(@"-------------------------- 定时器时间:%@ --------------------------", userInfo);
+
+- (void)timerAction:(AFTimer *)timer {
+    NSLog(@"-------------------------- 执行定时器方法，userInfo:%@ --------------------------", timer.userInfo);
 }
 
-- (void)dealloc {
-    NSLog(@"-------------------------- TimerVC被释放 --------------------------");
-//    [self.timer invalidate];
-}
+
 
 @end
