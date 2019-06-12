@@ -36,6 +36,7 @@
 		31F03FDB22B0AFB300F53C77 /* AFKitDemoTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F03FDA22B0AFB300F53C77 /* AFKitDemoTestUITests.m */; };
 		31F03FE622B0AFCC00F53C77 /* AFTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F03FAA22B0ACA400F53C77 /* AFTimerViewController.m */; };
 		31F03FE922B0B02400F53C77 /* AFKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F03FE822B0B02400F53C77 /* AFKitViewController.m */; };
+		31F03FEB22B0DA6A00F53C77 /* AFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F03F4422AF9FB200F53C77 /* AFKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31F03FEB22B0DA6A00F53C77 /* AFKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +143,7 @@
 				31F03FCE22B0AFB300F53C77 /* AFKitDemoTestTests */,
 				31F03FD922B0AFB300F53C77 /* AFKitDemoTestUITests */,
 				31F03F4522AF9FB200F53C77 /* Products */,
+				31F03FEA22B0DA6A00F53C77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,6 +222,13 @@
 				31F03FDC22B0AFB300F53C77 /* Info.plist */,
 			);
 			path = AFKitDemoTestUITests;
+			sourceTree = "<group>";
+		};
+		31F03FEA22B0DA6A00F53C77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -759,6 +769,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Alfie.AFKitDemoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

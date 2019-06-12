@@ -40,7 +40,7 @@
     self.tableView.sectionHeaderHeight = 0.001;
     
     //控制器数据源
-    [self addDataWithText:@"定时器" class:@"AFTimerViewController"];
+    [self addDataSourceWithText:@"定时器" class:@"AFTimerViewController"];
 }
 
 
