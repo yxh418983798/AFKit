@@ -24,8 +24,6 @@
 		31F03F4E22AF9FB200F53C77 /* AFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F03F4422AF9FB200F53C77 /* AFKit.framework */; };
 		31F03F5322AF9FB200F53C77 /* AFKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F03F5222AF9FB200F53C77 /* AFKitTests.m */; };
 		31F03F5522AF9FB200F53C77 /* AFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F03F4722AF9FB200F53C77 /* AFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31F03F6422AF9FC300F53C77 /* AFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F03F6022AF9FC300F53C77 /* AFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31F03F6622AF9FC300F53C77 /* AFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F03F6222AF9FC300F53C77 /* AFTimer.m */; };
 		31F03FB522B0AFB200F53C77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F03FB422B0AFB200F53C77 /* AppDelegate.m */; };
 		31F03FBB22B0AFB200F53C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F03FB922B0AFB200F53C77 /* Main.storyboard */; };
 		31F03FBE22B0AFB200F53C77 /* AFKitDemoTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31F03FBC22B0AFB200F53C77 /* AFKitDemoTest.xcdatamodeld */; };
@@ -36,7 +34,9 @@
 		31F03FDB22B0AFB300F53C77 /* AFKitDemoTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F03FDA22B0AFB300F53C77 /* AFKitDemoTestUITests.m */; };
 		31F03FE622B0AFCC00F53C77 /* AFTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F03FAA22B0ACA400F53C77 /* AFTimerViewController.m */; };
 		31F03FE922B0B02400F53C77 /* AFKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F03FE822B0B02400F53C77 /* AFKitViewController.m */; };
-		31F03FEB22B0DA6A00F53C77 /* AFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F03F4422AF9FB200F53C77 /* AFKit.framework */; };
+		31F03FF122B0E07600F53C77 /* AFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F03FEF22B0E07600F53C77 /* AFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31F03FF222B0E07600F53C77 /* AFTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F03FF022B0E07600F53C77 /* AFTimer.m */; };
+		31F03FF322B0E0E000F53C77 /* AFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F03F4422AF9FB200F53C77 /* AFKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +70,6 @@
 		31F03F4D22AF9FB200F53C77 /* AFKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F03F5222AF9FB200F53C77 /* AFKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFKitTests.m; sourceTree = "<group>"; };
 		31F03F5422AF9FB200F53C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		31F03F6022AF9FC300F53C77 /* AFTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFTimer.h; sourceTree = "<group>"; };
-		31F03F6222AF9FC300F53C77 /* AFTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFTimer.m; sourceTree = "<group>"; };
 		31F03FAA22B0ACA400F53C77 /* AFTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFTimerViewController.m; path = ../AFTimerDemoTest/AFTimerViewController.m; sourceTree = "<group>"; };
 		31F03FAB22B0ACA400F53C77 /* AFTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFTimerViewController.h; path = ../AFTimerDemoTest/AFTimerViewController.h; sourceTree = "<group>"; };
 		31F03FB122B0AFB200F53C77 /* AFKitDemoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFKitDemoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +89,8 @@
 		31F03FDC22B0AFB300F53C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31F03FE722B0B02400F53C77 /* AFKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFKitViewController.h; sourceTree = "<group>"; };
 		31F03FE822B0B02400F53C77 /* AFKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFKitViewController.m; sourceTree = "<group>"; };
+		31F03FEF22B0E07600F53C77 /* AFTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFTimer.h; sourceTree = "<group>"; };
+		31F03FF022B0E07600F53C77 /* AFTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31F03FEB22B0DA6A00F53C77 /* AFKit.framework in Frameworks */,
+				31F03FF322B0E0E000F53C77 /* AFKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +162,7 @@
 		31F03F4622AF9FB200F53C77 /* AFKit */ = {
 			isa = PBXGroup;
 			children = (
-				31F03F5E22AF9FC300F53C77 /* AFTimer */,
+				31F03FEE22B0E07600F53C77 /* AFTimer */,
 				31F03F4722AF9FB200F53C77 /* AFKit.h */,
 				31F03F4822AF9FB200F53C77 /* Info.plist */,
 			);
@@ -176,15 +176,6 @@
 				31F03F5422AF9FB200F53C77 /* Info.plist */,
 			);
 			path = AFKitTests;
-			sourceTree = "<group>";
-		};
-		31F03F5E22AF9FC300F53C77 /* AFTimer */ = {
-			isa = PBXGroup;
-			children = (
-				31F03F6022AF9FC300F53C77 /* AFTimer.h */,
-				31F03F6222AF9FC300F53C77 /* AFTimer.m */,
-			);
-			path = AFTimer;
 			sourceTree = "<group>";
 		};
 		31F03FB222B0AFB200F53C77 /* AFKitDemoTest */ = {
@@ -231,6 +222,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		31F03FEE22B0E07600F53C77 /* AFTimer */ = {
+			isa = PBXGroup;
+			children = (
+				31F03FEF22B0E07600F53C77 /* AFTimer.h */,
+				31F03FF022B0E07600F53C77 /* AFTimer.m */,
+			);
+			path = AFTimer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -239,7 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31F03F5522AF9FB200F53C77 /* AFKit.h in Headers */,
-				31F03F6422AF9FC300F53C77 /* AFTimer.h in Headers */,
+				31F03FF122B0E07600F53C77 /* AFTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31F03F6622AF9FC300F53C77 /* AFTimer.m in Sources */,
+				31F03FF222B0E07600F53C77 /* AFTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +663,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AFKit",
+				);
 				INFOPLIST_FILE = AFKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -689,6 +693,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AFKit",
+				);
 				INFOPLIST_FILE = AFKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -764,7 +772,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJXT5G4K7L;
 				INFOPLIST_FILE = AFKitDemoTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -783,7 +791,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJXT5G4K7L;
 				INFOPLIST_FILE = AFKitDemoTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,7 +7,7 @@
 //
 
 #import "AFTimerViewController.h"
-#import <AFKit/AFTimer.h>
+#import <AFKit/AFKit.h>
 
 @interface AFTimerViewController ()
 
